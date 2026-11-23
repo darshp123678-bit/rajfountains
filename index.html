@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="POOLVERSE creates beautiful swimming pool designs and construction spaces.">
+  <title>POOLVERSE | Luxury Pool Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">RAJ <span>FOUNTAIN</span><i>.</i><small>AND SWIMMING POOL</small></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a><a href="#designs">Our Designs</a><a href="#services">Services</a><a href="#about">About</a>
+      <a href="tel:9672117111">Call: 9672117111</a><a class="nav-cta" href="#contact">Get a Quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DESIGN • BUILD • RELAX</p>
+        <h1>Your own <em>private</em><br>piece of paradise.</h1>
+        <p class="hero-copy">RAJ FOUNTAIN AND SWIMMING POOL — thoughtful swimming pool design, fountain features and construction, made around the way you live.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#designs">Explore designs <span>↗</span></a>
+          <a class="text-link" href="#services">Discover our services</a>
+        </div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span> MADE FOR YOUR MOMENTS</div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div class="section-kicker">01 / THE POOLVERSE APPROACH</div>
+      <div class="intro-grid">
+        <h2>More than a pool.<br><em>A feeling.</em></h2>
+        <div><p class="muted">A great pool brings people together, adds calm to your day and transforms the space around it. We bring design ideas and practical planning together to help you imagine your perfect escape.</p><a class="under-link" href="#contact">Let's plan your pool <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="designs section-wrap" id="designs">
+      <div class="section-heading">
+        <div><div class="section-kicker">02 / THE COLLECTION</div><h2>Find your <em>blue.</em></h2></div>
+        <p class="muted">A few ideas to get your imagination flowing.</p>
+      </div>
+      <div class="filter-row" aria-label="Filter pool designs">
+        <button class="filter active" data-filter="all">All designs</button>
+        <button class="filter" data-filter="modern">Modern</button>
+        <button class="filter" data-filter="infinity">Infinity</button>
+        <button class="filter" data-filter="classic">Classic</button>
+      </div>
+      <div class="gallery">
+        <article class="gallery-card" data-category="infinity">
+          <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1100&q=85" alt="Blue swimming pool surrounded by greenery">
+          <div class="card-caption"><span>01 / INFINITY</span><h3>Edge of the horizon</h3></div>
+        </article>
+        <article class="gallery-card" data-category="modern">
+          <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1100&q=85" alt="Modern outdoor swimming pool">
+          <div class="card-caption"><span>02 / MODERN</span><h3>Clean lines, calm mind</h3></div>
+        </article>
+        <article class="gallery-card" data-category="classic">
+          <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1100&q=85" alt="Elegant resort-style swimming pool">
+          <div class="card-caption"><span>03 / CLASSIC</span><h3>A timeless escape</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section-wrap" id="services">
+      <div class="section-kicker">03 / WHAT WE DO</div>
+      <h2>From first sketch<br>to <em>first splash.</em></h2>
+      <div class="service-grid">
+        <article><span>01</span><h3>Pool design</h3><p>Explore shapes, finishes and layouts that suit your space.</p></article>
+        <article><span>02</span><h3>Construction planning</h3><p>Plan the important stages, materials and project details.</p></article>
+        <article><span>03</span><h3>Finishing touches</h3><p>Think through lighting, surroundings and the final atmosphere.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-panel">
+        <div class="section-kicker">04 / RAJ FOUNTAIN AND SWIMMING POOL · 9672117111</div>
+        <h2>Let's make<br><em>waves.</em></h2>
+        <p class="muted">Tell us a little about the pool you're dreaming of.</p>
+        <form id="enquiry-form" action="https://formspree.io/f/mkjrqoay" method="POST">
+          <label for="name">Your name</label>
+          <input id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Swimming pool design</option>
+            <option>Swimming pool construction</option>
+            <option>Fountain design</option>
+            <option>Pool renovation</option>
+            <option>Other enquiry</option>
+          </select>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+
+          <input type="hidden" name="_subject" value="New enquiry - RAJ FOUNTAIN AND SWIMMING POOL">
+          <button class="button button-gold" type="submit">Send enquiry <span>↗</span></button>
+          <p class="form-note" id="form-note" aria-live="polite">Your enquiry will be sent securely through Formspree. Call us: <a href="tel:9672117111">9672117111</a>.</p>
+        </form>
+      </div>
+      <div class="contact-image" role="img" aria-label="Peaceful swimming pool at sunset"></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home">RAJ <span>FOUNTAIN</span><i>.</i><small>AND SWIMMING POOL</small></a><p>DESIGNED FOR THE ART OF SLOW LIVING.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
